@@ -1,0 +1,59 @@
+<meta charset="UTF-8" />
+<title>File upload</title>
+<style>
+  body {
+    background: #f1f1f1;
+    margin: 0;
+  }
+  .filelist {
+    list-style-type: none;
+    padding: 0;
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 10px 20px;
+    background: #fff;
+    border-left:#000000 1px solid;
+    border-right:#0000CC 1px solid;
+    border-top:#00CC00 1px solid;
+    border-bottom:#CC0000 1px solid;
+  }
+  .submit-btn {
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: block;
+    height:50px;
+        width: 200px;
+  }
+  .h1 {
+        font-family:Verdana;
+}
+</style>
+</head>
+<body>
+<br>
+<div class="container">
+ <center>
+  <img src="logo.jpg"><br>
+  <h1><font face=Verdana><center>CS:GO Team Builder</h1></center>
+  <br><center>
+  <form method="post" action="fileUpload" class="dropzone" enctype="multipart/form-data">
+    <input name="file" id="filesToUpload" type="file" style="background:#C0C0C0;"/>
+    <button type="submit" class="submit-btn">Build Teams !</button>
+  </form>
+<br>
+<hr>
+  <div><br>
+    <br><br>
+    <h3>Örnek Data :</h3>
+    <img src="data.jpg" width="300" height="300">
+</center>
+  </div>
+</div>
+</body>
+</html>
